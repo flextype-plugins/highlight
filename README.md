@@ -1,6 +1,6 @@
 # Highlight Plugin for [Flextype](http://flextype.org/)
-![version](https://img.shields.io/badge/version-1.1.0-brightgreen.svg?style=flat-square "Version")
-![Flextype](https://img.shields.io/badge/Flextype-0.x-green.svg?style=flat-square "Flextype Version")
+![version](https://img.shields.io/badge/version-1.1.1-brightgreen.svg?style=flat-square "Version")
+![Flextype](https://img.shields.io/badge/Flextype-0.7.0-green.svg?style=flat-square "Flextype Version")
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/flextype-plugins/highlight/blob/master/LICENSE.txt)
 
 ![Highlight](screenshot.jpg)  
@@ -15,21 +15,12 @@ Highlight plugin for [Flextype](https://github.com/flextype/flextype) adds a pow
 * compatible with any js framework
 
 ## Installation
-1. Unzip plugin to the folder `/site/plugins/`
-2. Go to `/site/config/site.yaml` and add plugin name to plugins section.
-3. Save your changes.
-
-Example:
-```
-...
-plugins:
-  - highlight
-```
-
+Unzip plugin to the folder `/site/plugins/`
 
 ## Usage in the pages
 
-    ```php
+```html
+<pre><code class="php">
     function foo($attributes) {
         // Extract attributes
         extract($attributes);
@@ -40,7 +31,8 @@ plugins:
         // return
         return $text;
     }
-    ```
+</code></pre>
+```
 
 ## Settings
 ```yaml
